@@ -1,0 +1,29 @@
+.navbar-fixed-left {
+  /*width: 140px;*/
+  position: fixed;
+  border-radius: 0;
+  height: 100%;
+  background-color: #444C63;
+}
+
+.navbar-fixed-left .navbar-nav > li {
+  float: none;
+  cursor: pointer;
+}
+
+.navbar-fixed-left + .container {
+  /*padding-left: 160px;*/
+}
+
+.navbar-nav>.active>a{
+  background-color: #444C63;
+  color: #ffffff;
+}
+
+.db-glyphicon{
+  margin-right: 15px;
+}
+
+.nav-link{
+  padding-left: 0px;
+}

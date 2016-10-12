@@ -1,0 +1,14 @@
+.progress-container{
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.db-progress{
+  height: 5px;
+}
+
+.progress-label{
+  color: #ffffff;
+  margin-bottom: 5px;
+}

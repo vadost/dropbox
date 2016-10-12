@@ -1,0 +1,51 @@
+<nav class="navbar navbar-inverse navbar-fixed-left">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div><a class="navbar-brand">Dropbox</a></div>
+      <ul class="nav navbar-nav">
+        <li routerLinkActive="active">
+          <a [routerLink]="['/files']" class="nav-link">
+            <span class="glyphicon glyphicon-file db-glyphicon" aria-hidden="true"></span>Files
+          </a>
+        </li>
+        <li routerLinkActive="active">
+          <a [routerLink]="['/photos']" class="nav-link">
+            <span class="glyphicon glyphicon-picture db-glyphicon" aria-hidden="true"></span>Photos
+          </a>
+        </li>
+        <li routerLinkActive="active">
+          <a [routerLink]="['/sharing']" class="nav-link">
+            <span class="glyphicon glyphicon glyphicon-transfer db-glyphicon" aria-hidden="true"></span>Sharing
+          </a>
+        </li>
+        <li routerLinkActive="active">
+          <a [routerLink]="['/links']" class="nav-link">
+            <span class="glyphicon glyphicon-link db-glyphicon" aria-hidden="true"></span>Links
+          </a>
+        </li>
+        <li routerLinkActive="active">
+          <a [routerLink]="['/events']" class="nav-link">
+            <span class="glyphicon glyphicon glyphicon-bullhorn db-glyphicon" aria-hidden="true"></span>Events
+          </a>
+        </li>
+        <li routerLinkActive="active">
+          <a [routerLink]="['/started']" class="nav-link">
+            <span class="glyphicon glyphicon glyphicon-open-file db-glyphicon" aria-hidden="true"></span>Get started
+          </a>
+        </li>
+      </ul>
+
+      <db-progress-bar></db-progress-bar>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

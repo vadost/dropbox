@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-md-offset-1 db-title">
+    <h1>{{ title }}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+    <div class="btn-group group-right" role="group" aria-label="...">
+      <button type="button" class="btn btn-default" (click)="sortBy('name')">Name</button>
+      <button type="button" class="btn btn-default" (click)="sortBy('size')">Size</button>
+      <button type="button" class="btn btn-default" (click)="sortBy('modified')">Modified</button>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+    <div class="row">
+      <db-photo-item *ngFor="let photo of photos" [photo]="photo"></db-photo-item>
+    </div>
+  </div>
+</div>

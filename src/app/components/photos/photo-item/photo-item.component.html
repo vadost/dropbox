@@ -1,0 +1,10 @@
+<div class="col-md-3 col-sm-4">
+  <div class="thumbnail photo-item">
+    <img src="{{ photo.url }}">
+    <div class="caption">
+      <p><strong>File name: </strong>{{ photo.name }}</p>
+      <p><strong>File Size: </strong>{{ photo.size }} bytes</p>
+      <p><strong>Last modified: </strong>{{ photo.modified | date: 'dd/MM/yyyy'}}</p>
+    </div>
+  </div>
+</div>
