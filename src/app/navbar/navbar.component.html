@@ -1,18 +1,20 @@
 <nav class="navbar navbar-inverse navbar-fixed-left">
   <div class="container-fluid">
 
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <div class="navbar-header db-nav-header">
+      <button #hamburger id="nav-icon3" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"
+          (click)="showNav(nav, hamburger)">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
     </div>
+
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div #nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <div><a class="navbar-brand">Dropbox</a></div>
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav db-nav">
         <li routerLinkActive="active">
           <a [routerLink]="['/files']" class="nav-link">
             <span class="glyphicon glyphicon-file db-glyphicon" aria-hidden="true"></span>Files
